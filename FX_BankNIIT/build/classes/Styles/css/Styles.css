@@ -1,0 +1,116 @@
+/*  #4f4f4f   */
+.root{
+    -fx-background-color:white ;
+    -fx-font-size: 14px
+}
+
+.card{
+    -fx-background-color: white;
+    -fx-background-radius: 40px;
+    -fx-border-radius: 40px;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0, 1.5);
+}
+
+.linear-gradient-red{
+    -fx-background-color: linear-gradient(to top right, #ffd56e, #fc6462);
+}
+
+/* 5a5a5a; */
+.btn-Login{
+    -fx-background-radius: 35px;
+    -fx-border-radius: 35px;
+    -fx-background-color: #ffd56e;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -jfx-button-type: flat;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 35px;
+}
+
+.label-Caption{
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.toolbar{
+    -fx-background-color: #243A5E;
+}
+
+.jfx-hamburger-Icon{
+    -fx-spacing: 4px;
+}
+
+.jfx-hamburger StackPane{
+    -fx-background-color: #ffffff;
+    -fx-pref-width: 30px;
+    -fx-background-radius: 5px;
+}
+
+.side-menu{
+    -fx-background-color: #243A5E;
+}
+
+.side-menu-button{
+    -fx-background-color: #5a5a5a;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+    -fx-border-width: 0px;
+    -fx-border-style: none;
+    -fx-text-fill: white;
+    -fx-pre-width: 50px;
+    -fx-pre-height: 50px;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.side-menu-button:hover{
+    -fx-background-color: #3ca609;
+}
+
+.side-menu-button:default{
+    -fx-background-color: #243a51;
+}
+
+.blue-gradient{
+    -fx-background-color:linear-gradient(to top right, #43BDFB, #3352AC);
+}
+
+.save-button{
+    -fx-font-size:15px;
+    -fx-background-color: #2196F3;
+    -fx-border-radius: 40px;
+    -fx-background-radius: 40px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.edit-button{
+    -fx-font-size:15px;
+    -fx-background-color: #26A69A;
+    -fx-border-radius: 40px;
+    -fx-background-radius: 40px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.delete-button{
+    -fx-font-size:15px;
+    -fx-background-color: #ff5252;
+    -fx-border-radius: 40px;
+    -fx-background-radius: 40px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.jfx-tab-pane .headers-region{
+    -fx-background-color: transparent;
+}
+
+.jfx-tab-pane .tab-header-background{
+    -fx-background-color: transparent;
+}
+
+.green-gradient{
+    -fx-background-color: linear-gradient(to top right, #DEDAC3, #1D8EF9);
+}

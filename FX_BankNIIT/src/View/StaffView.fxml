@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.StaffViewController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1220.0">
+         <children>
+            <JFXTabPane layoutX="155.0" layoutY="23.0" prefHeight="611.0" prefWidth="1026.0">
+               <tabs>
+                  <Tab styleClass="green-gradient" text="Add Staff">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="999.0">
+                           <children>
+                              <HBox layoutX="262.0" layoutY="135.0" prefHeight="17.0" prefWidth="188.0" />
+                              <PasswordField fx:id="txtPass" layoutX="276.0" layoutY="139.0" prefHeight="39.0" prefWidth="196.0" promptText="Password" />
+                              <TextField fx:id="txtEmail" layoutX="31.0" layoutY="141.0" prefHeight="38.0" prefWidth="218.0" promptText="Email" />
+                              <TextField fx:id="txtAddress" layoutX="31.0" layoutY="196.0" prefHeight="38.0" prefWidth="218.0" promptText="Address" />
+                              <DatePicker fx:id="dob" layoutX="274.0" layoutY="84.0" prefHeight="34.0" prefWidth="174.0" promptText="Date of Birth" />
+                              <TextField fx:id="txtPhone" layoutX="30.0" layoutY="84.0" prefHeight="38.0" prefWidth="218.0" promptText="Phone" />
+                              <TextField fx:id="txtFname" layoutX="30.0" layoutY="31.0" prefHeight="38.0" prefWidth="218.0" promptText="First Name" />
+                              <TextField fx:id="txtLname" layoutX="270.0" layoutY="31.0" prefHeight="38.0" prefWidth="218.0" promptText="Last Name" />
+                              <Button fx:id="btnCancel" layoutX="274.0" layoutY="198.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="101.0" text="Cancel" />
+                              <Button fx:id="btnSave" layoutX="385.0" layoutY="200.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="104.0" text="Save" />
+                              <Button fx:id="btnDelStaff" layoutX="33.0" layoutY="512.0" mnemonicParsing="false" onAction="#DeletStaff" prefHeight="25.0" prefWidth="94.0" text="Delete" />
+                              <Button fx:id="btnUpdtStaf" layoutX="133.0" layoutY="512.0" mnemonicParsing="false" onAction="#UpdateStafDet" prefHeight="25.0" prefWidth="94.0" text="Update" />
+                              <TextField fx:id="txtStafNoToMan" layoutX="30.0" layoutY="316.0" prefHeight="25.0" prefWidth="264.0" promptText="Enter Account Number" />
+                              <Separator layoutX="30.0" layoutY="271.0" prefHeight="16.0" prefWidth="479.0" />
+                              <Button fx:id="btnSerchStafMan" layoutX="311.0" layoutY="318.0" mnemonicParsing="false" onAction="#SearchStaffMan" prefHeight="25.0" prefWidth="107.0" text="Search Account" />
+                              <Label layoutX="44.0" layoutY="289.0" prefHeight="17.0" prefWidth="116.0" text="Yet to code this area" />
+                              <ComboBox fx:id="comboSRole" layoutX="33.0" layoutY="246.0" prefHeight="25.0" prefWidth="211.0" promptText="Role" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab styleClass="green-gradient" text="List Staff">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="staffTabView" layoutX="16.0" layoutY="13.0" prefHeight="484.0" prefWidth="993.0">
+                                <columns>
+                                  <TableColumn fx:id="colID" prefWidth="75.0" text="ID" />
+                                  <TableColumn fx:id="colFName" prefWidth="179.0" text="F.NAME" />
+                                    <TableColumn fx:id="colLName" prefWidth="208.0" text="L.NAME" />
+                                    <TableColumn fx:id="colEmail" prefWidth="112.0" text="EMAIL" />
+                                    <TableColumn fx:id="colPhone" prefWidth="144.0" text="PHONE" />
+                                    <TableColumn fx:id="colAdd" prefWidth="189.0" text="ADDRESS" />
+                                    <TableColumn fx:id="colDOB" prefWidth="85.0" text="DoB" />
+                                </columns>
+                              </TableView>
+                              <JFXButton layoutX="749.0" layoutY="520.0" prefHeight="25.0" prefWidth="79.0" styleClass="edit-button" stylesheets="@../Styles/css/Styles.css" text="Edit" />
+                              <JFXButton layoutX="834.0" layoutY="520.0" prefHeight="25.0" prefWidth="79.0" styleClass="delete-button" stylesheets="@../Styles/css/Styles.css" text="Delete" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

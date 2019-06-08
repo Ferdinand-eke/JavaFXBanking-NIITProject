@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.DashBoardViewController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="1220.0">
+         <children>
+            <HBox layoutX="11.0" layoutY="45.0" prefHeight="173.0" prefWidth="1199.0" spacing="18.0">
+               <children>
+                  <AnchorPane prefHeight="146.0" prefWidth="285.0" styleClass="card" stylesheets="@../Styles/css/Styles.css">
+                     <children>
+                        <AnchorPane layoutX="31.0" layoutY="-27.0" prefHeight="83.0" prefWidth="114.0" style="-fx-background-color: #06B0C5;" styleClass="card" stylesheets="@../Styles/css/Styles.css">
+                           <children>
+                              <FontAwesomeIconView layoutX="45.0" layoutY="52.0" />
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="191.0" layoutY="24.0" prefHeight="17.0" prefWidth="68.0" style="-fx-font-weight: bold;" text="Staff" />
+                        <Label layoutX="191.0" layoutY="56.0" prefHeight="38.0" prefWidth="56.0" style="-fx-font-size: 22; -fx-font-weight: bold;" text="34" />
+                        <Separator layoutX="5.0" layoutY="105.0" prefHeight="4.0" prefWidth="280.0" />
+                        <FontAwesomeIconView layoutX="31.0" layoutY="134.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="165.0" prefWidth="271.0" styleClass="card" stylesheets="@../Styles/css/Styles.css">
+                     <children>
+                        <AnchorPane layoutX="31.0" layoutY="-27.0" prefHeight="83.0" prefWidth="114.0" style="-fx-background-color: #FD970F;" styleClass="card" stylesheets="@../Styles/css/Styles.css">
+                           <children>
+                              <FontAwesomeIconView layoutX="45.0" layoutY="52.0" />
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="191.0" layoutY="24.0" prefHeight="17.0" prefWidth="68.0" style="-fx-font-weight: bold;" text="Accounts" />
+                        <Label layoutX="191.0" layoutY="56.0" prefHeight="38.0" prefWidth="56.0" style="-fx-font-size: 22; -fx-font-weight: bold;" text="34" />
+                        <Separator layoutX="5.0" layoutY="105.0" prefHeight="4.0" prefWidth="280.0" />
+                        <FontAwesomeIconView layoutX="31.0" layoutY="134.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="295.0" layoutY="10.0" prefHeight="193.0" prefWidth="264.0" styleClass="card" stylesheets="@../Styles/css/Styles.css">
+                     <children>
+                        <AnchorPane layoutX="31.0" layoutY="-27.0" prefHeight="83.0" prefWidth="114.0" style="-fx-background-color: #5a5a5a;" styleClass="card" stylesheets="@../Styles/css/Styles.css">
+                           <children>
+                              <FontAwesomeIconView layoutX="45.0" layoutY="52.0" />
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="191.0" layoutY="24.0" prefHeight="17.0" prefWidth="68.0" style="-fx-font-weight: bold;" text="Date:" />
+                        <Label layoutX="191.0" layoutY="56.0" prefHeight="38.0" prefWidth="56.0" style="-fx-font-size: 22; -fx-font-weight: bold;" text="34" />
+                        <Separator layoutX="5.0" layoutY="105.0" prefHeight="4.0" prefWidth="280.0" />
+                        <FontAwesomeIconView layoutX="31.0" layoutY="134.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="580.0" layoutY="10.0" prefHeight="193.0" prefWidth="264.0" styleClass="card" stylesheets="@../Styles/css/Styles.css">
+                     <children>
+                        <AnchorPane layoutX="31.0" layoutY="-27.0" prefHeight="83.0" prefWidth="114.0" style="-fx-background-color: #E74C48;" styleClass="card" stylesheets="@../Styles/css/Styles.css">
+                           <children>
+                              <FontAwesomeIconView layoutX="45.0" layoutY="52.0" />
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="191.0" layoutY="24.0" prefHeight="17.0" prefWidth="68.0" style="-fx-font-weight: bold;" text="Time:" />
+                        <Label layoutX="191.0" layoutY="56.0" prefHeight="38.0" prefWidth="56.0" style="-fx-font-size: 22; -fx-font-weight: bold;" text="34" />
+                        <Separator layoutX="5.0" layoutY="105.0" prefHeight="4.0" prefWidth="280.0" />
+                        <FontAwesomeIconView layoutX="31.0" layoutY="134.0" />
+                        <Label layoutX="57.0" layoutY="121.0" prefHeight="17.0" prefWidth="104.0" style="-fx-font-weight: bold;" text="Signed In As :" />
+                        <Label layoutX="148.0" layoutY="121.0" prefHeight="17.0" prefWidth="133.0" style="-fx-font-weight: bold;" text="Somebody" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <AnchorPane fx:id="donutChartHolder" layoutX="18.0" layoutY="229.0" prefHeight="442.0" prefWidth="580.0" styleClass="card" stylesheets="@../Styles/css/Styles.css">
+               <children>
+                  <BarChart fx:id="barChart" layoutX="51.0" layoutY="33.0" prefHeight="404.0" prefWidth="518.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+                  <Label layoutX="140.0" layoutY="14.0" prefHeight="30.0" prefWidth="398.0" text="Data Visualisation of Age : Deposit Relationship">
+                     <font>
+                        <Font name="Elephant Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <PieChart fx:id="pieChart" layoutX="617.0" layoutY="229.0" prefHeight="442.0" prefWidth="590.0" styleClass="card" stylesheets="@../Styles/css/Styles.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
